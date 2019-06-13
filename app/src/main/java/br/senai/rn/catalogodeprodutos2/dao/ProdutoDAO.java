@@ -28,8 +28,8 @@ public class ProdutoDAO {
         return copiaProdutos;
     }
 
-    public void remover(Produto aluno) {
-        produtos.remove(aluno);
+    public void remover(Produto produto) {
+        produtos.remove(produto);
     }
 
 }

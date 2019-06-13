@@ -34,8 +34,8 @@ public class FormularioProdutoActivity extends AppCompatActivity {
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                criarAluno();
-                salvarAluno();
+                criarProduto();
+                salvarProduto();
             }
         });
     }
@@ -61,7 +61,7 @@ public class FormularioProdutoActivity extends AppCompatActivity {
         botao = findViewById(R.id.botaoSalvar);
     }
 
-    private void criarAluno() {
+    private void criarProduto() {
         String nome = campoNome.getText().toString();
         String preco = campoPreco.getText().toString();
         String fabricante = campoFab.getText().toString();
@@ -71,7 +71,7 @@ public class FormularioProdutoActivity extends AppCompatActivity {
         produto.setFabricante(fabricante);
     }
 
-    private void salvarAluno() {
+    private void salvarProduto() {
         dao.salvar(produto);
         finish();
     }

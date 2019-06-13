@@ -17,6 +17,6 @@ public class CatalogoApplication extends Application {
     private void CriarProdutosDeTeste() {
         ProdutoDAO dao = new ProdutoDAO();
 
-        dao.salvar(new Produto("Chocolate", "11223344", "Iel"));
+        dao.salvar(new Produto("Chocolate", "1122", "Iel"));
     }
 }
